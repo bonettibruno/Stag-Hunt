@@ -885,7 +885,7 @@ class BayesianStagHunterBot(HighPerformanceBaseGridUniverseBot):
     def __init__(self, *args, **kwargs):
         super().__init__(*args, **kwargs)
         self.id = str(uuid.uuid4())
-        self.beta = 2.5  # Rationality parameter
+        self.beta = 1.5  # Rationality parameter
         self.threshold = 0.5  # Belief threshold
         
         # Prior beliefs P(Intentions)
@@ -989,6 +989,7 @@ class BayesianStagHunterBot(HighPerformanceBaseGridUniverseBot):
             logger.info(f"Human moved to: {human_pos}")
             logger.info(f"Stag position: {stag_pos}, Hare positions: {hare_pos}")
             logger.info(f"Beliefs: {self.beliefs}")
+            logger.info(f"State: {self.state}")
 
         
         # Store current human position for next iteration
