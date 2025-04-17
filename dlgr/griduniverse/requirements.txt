@@ -1,4 +1,4 @@
-dallinger
+dallinger @ git+https://github.com/mainakpal08/Dallinger.git@mainakv2
 numpy
 faker
 PyYAML
