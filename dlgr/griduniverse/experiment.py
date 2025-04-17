@@ -1284,7 +1284,7 @@ def serve_grid():
 @extra_routes.route("/prolific_id")
 def info():
     config = get_config()
-    return flask.render_template("prolific_id.html", mode=config.get("mode"))
+    return flask.render_template("prolific_info.html", mode=config.get("mode"))
 
 
 class Griduniverse(Experiment):
